@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a empresa 54.010.543 Abdias Ribeiro do Nascimento, CNPJ 54.010.543/0001-19, fundada em 21/02/2024 no Rio de Janeiro — RJ. Atividade principal: comércio varejista de bebidas, CNAE 47.23-7-00.">
+    <meta name="theme-color" content="#123b63">
+    <title>54.010.543 Abdias Ribeiro do Nascimento | Comércio Varejista de Bebidas</title>
+    <style>
+        :root {
+            --primary: #123b63;
+            --primary-dark: #0a2947;
+            --secondary: #1f6fae;
+            --accent: #d6a84f;
+            --light: #f5f8fb;
+            --dark: #17212b;
+            --muted: #596b7d;
+            --border: #e9eef3;
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 105px; }
+        body { margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--dark); background: #fff; line-height: 1.6; }
+        a { color: inherit; }
+        button { font: inherit; }
+        h1, h2, h3, h4, p { margin-top: 0; }
+        .container { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+        .icon { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+        .icon-definitions { position: absolute; width: 0; height: 0; overflow: hidden; }
+        .skip-link { position: absolute; top: -100px; left: 20px; z-index: 2000; padding: 12px 20px; background: #fff; color: var(--primary); }
+        .skip-link:focus { top: 10px; }
+        a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+        .navbar { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.98); box-shadow: 0 2px 15px rgba(0,0,0,.06); }
+        .navbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 88px; }
+        .navbar-brand { text-decoration: none; color: var(--primary); font-size: 1.04rem; font-weight: 800; line-height: 1.35; max-width: 330px; }
+        .navbar-brand span { display: block; color: #84601e; font-size: .72rem; letter-spacing: .11em; text-transform: uppercase; font-weight: 700; margin-top: 5px; }
+        .nav-list { display: flex; align-items: center; gap: 25px; list-style: none; padding: 0; margin: 0; }
+        .nav-link { text-decoration: none; font-weight: 600; font-size: .93rem; color: #34495e; }
+        .nav-link:hover { color: var(--secondary); }
+        .menu-toggle { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; background: #fff; border: 1px solid var(--border); border-radius: 8px; color: var(--primary); cursor: pointer; }
+        .menu-toggle[hidden] { display: none; }
+        .hero { min-height: 650px; display: flex; align-items: center; position: relative; overflow: hidden; background: linear-gradient(135deg, #0a2947, #123b63 65%, #1b527f); }
+        .hero::after { content: ""; position: absolute; width: 500px; height: 500px; border: 1px solid rgba(255,255,255,.12); border-radius: 50%; right: -150px; top: -120px; pointer-events: none; }
+        .hero::before { content: ""; position: absolute; width: 330px; height: 330px; border: 1px solid rgba(214,168,79,.2); border-radius: 50%; right: -60px; bottom: -170px; pointer-events: none; }
+        .hero-content { position: relative; z-index: 1; padding-block: 85px 110px; }
+        .hero-badge { display: inline-flex; align-items: center; gap: 9px; padding: 8px 15px; border-radius: 50px; background: rgba(255,255,255,.1); color: #fff; border: 1px solid rgba(255,255,255,.2); font-size: .85rem; font-weight: 600; margin-bottom: 24px; }
+        .hero-badge .icon { width: 19px; height: 19px; }
+        .hero h1 { max-width: 830px; font-size: clamp(2.45rem, 5vw, 4.5rem); font-weight: 800; color: #fff; line-height: 1.12; letter-spacing: -.04em; margin-bottom: 25px; }
+        .hero h1 span { color: var(--accent); }
+        .hero p { color: rgba(255,255,255,.85); font-size: 1.1rem; max-width: 730px; line-height: 1.8; }
+        .hero-company { font-weight: 700; }
+        .button-row { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 28px; }
+        .btn { display: inline-flex; justify-content: center; align-items: center; text-decoration: none; padding: 14px 25px; border-radius: 8px; font-weight: 700; transition: transform .2s, background .2s; }
+        .btn-main { background: var(--accent); color: #132c43; border: 1px solid var(--accent); }
+        .btn-main:hover { background: #e4b961; transform: translateY(-2px); }
+        .btn-outline { border: 1px solid rgba(255,255,255,.6); color: #fff; }
+        .btn-outline:hover { background: #fff; color: var(--primary); }
+        .stats { margin-top: -55px; position: relative; z-index: 2; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+        .stat-card { background: #fff; border-radius: 15px; padding: 28px 18px; box-shadow: 0 10px 35px rgba(0,0,0,.08); border: 1px solid var(--border); text-align: center; }
+        .stat-card .icon { width: 32px; height: 32px; color: var(--secondary); margin-bottom: 10px; }
+        .stat-card h3 { font-size: 1.25rem; font-weight: 800; color: var(--primary); margin-bottom: 6px; }
+        .stat-card p { margin: 0; font-size: .89rem; color: var(--muted); }
+        .section { padding: 90px 0; }
+        .bg-light { background: var(--light); }
+        .section-heading { text-align: center; margin-bottom: 45px; }
+        .section-title { color: var(--primary); font-weight: 800; font-size: clamp(1.9rem, 3vw, 2.4rem); line-height: 1.25; margin-bottom: 16px; letter-spacing: -.025em; }
+        .section-subtitle { color: var(--muted); max-width: 730px; margin: 0 auto; line-height: 1.8; }
+        .two-columns { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 50px; }
+        .about-box { background: var(--light); border-radius: 20px; padding: 40px; }
+        .about-icon, .service-icon { width: 60px; height: 60px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; }
+        .about-icon { background: var(--primary); color: #fff; }
+        .about-box h3 { color: var(--primary); font-size: 1.45rem; line-height: 1.35; margin-bottom: 18px; }
+        .about-box p { color: var(--muted); line-height: 1.85; }
+        .about-box p:last-child { margin-bottom: 0; }
+        .feature { display: flex; gap: 16px; margin-bottom: 26px; }
+        .feature:last-child { margin-bottom: 0; }
+        .feature > .icon { width: 23px; height: 23px; color: #967022; margin-top: 3px; }
+        .feature h3 { color: var(--primary); font-size: 1rem; font-weight: 700; margin-bottom: 5px; }
+        .feature p { margin: 0; font-size: .95rem; color: var(--muted); }
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .service-card { padding: 32px 26px; border-radius: 16px; border: 1px solid var(--border); background: #fff; transition: transform .2s, box-shadow .2s; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,.07); }
+        .service-icon { background: #edf5fb; color: var(--secondary); }
+        .service-card h3 { font-size: 1.14rem; color: var(--primary); margin-bottom: 12px; }
+        .service-card p { color: var(--muted); margin-bottom: 0; line-height: 1.8; }
+        .highlight { background: var(--primary); color: #fff; border-radius: 25px; padding: 55px; overflow: hidden; position: relative; }
+        .highlight::after { content: ""; position: absolute; width: 300px; height: 300px; border: 1px solid rgba(255,255,255,.1); border-radius: 50%; right: -100px; bottom: -130px; pointer-events: none; }
+        .highlight .two-columns { position: relative; z-index: 1; grid-template-columns: 1.25fr 1fr; }
+        .eyebrow { color: var(--accent); text-transform: uppercase; font-weight: 700; font-size: .78rem; letter-spacing: .12em; }
+        .highlight h2 { font-size: clamp(1.8rem, 3vw, 2.25rem); line-height: 1.3; margin: 14px 0 18px; }
+        .highlight p { color: rgba(255,255,255,.85); line-height: 1.8; }
+        .highlight .feature h3 { color: #fff; }
+        .highlight .feature > .icon { color: var(--accent); }
+        .highlight .btn { margin-top: 12px; }
+        .data-table { background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,.06); margin: 0; }
+        .row-data { padding: 20px 25px; border-bottom: 1px solid #edf0f3; display: grid; grid-template-columns: 30% 1fr; gap: 25px; }
+        .row-data:last-child { border-bottom: none; }
+        .data-label { color: var(--muted); font-weight: 600; }
+        .data-value { color: var(--primary); font-weight: 700; margin: 0; overflow-wrap: anywhere; }
+        .data-note { color: var(--muted); font-size: .85rem; margin: 20px 0 0; line-height: 1.8; }
+        .contact-box { background: var(--light); border-radius: 20px; padding: 36px; }
+        .contact-item { display: flex; gap: 18px; margin-bottom: 25px; }
+        .contact-item:last-child { margin-bottom: 0; }
+        .contact-item > .icon { color: var(--secondary); margin-top: 3px; }
+        .contact-item h3 { color: var(--primary); font-size: 1rem; margin-bottom: 5px; }
+        .contact-item p { color: var(--muted); margin: 0; overflow-wrap: anywhere; }
+        .location-panel { align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding: 40px; border-radius: 20px; border: 1px solid var(--border); background: #fff; box-shadow: 0 10px 35px rgba(0,0,0,.04); }
+        .location-panel > .icon { color: var(--secondary); width: 45px; height: 45px; margin-bottom: 20px; }
+        .location-panel h3 { font-size: 1.8rem; color: var(--primary); margin-bottom: 8px; }
+        .location-panel p { color: var(--muted); }
+        .notice { border-left: 3px solid var(--accent); padding: 14px 18px; background: var(--light); margin: 18px 0 0; font-size: .9rem; }
+        .cta { background: linear-gradient(135deg, #0a2947, #1f6fae); padding: 75px 0; color: #fff; text-align: center; }
+        .cta h2 { font-size: clamp(1.9rem, 3.5vw, 2.7rem); line-height: 1.25; font-weight: 800; }
+        .cta p { color: rgba(255,255,255,.85); margin-bottom: 26px; }
+        footer { background: #081c30; color: rgba(255,255,255,.78); padding: 50px 0 24px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.15fr; gap: 45px; }
+        footer h2 { color: #fff; font-size: 1.1rem; line-height: 1.45; margin-bottom: 18px; }
+        footer p { font-size: .93rem; }
+        footer ul { list-style: none; padding: 0; margin: 0; }
+        footer li { margin-bottom: 9px; }
+        footer a { text-decoration: none; font-size: .93rem; }
+        footer a:hover { color: #fff; }
+        footer strong { color: #fff; font-size: .93rem; overflow-wrap: anywhere; }
+        .footer-label { margin: 0 0 4px; font-size: .82rem; }
+        .footer-label + strong { display: block; margin-bottom: 18px; }
+        .footer-line { border-top: 1px solid rgba(255,255,255,.1); margin-top: 35px; padding-top: 22px; text-align: center; font-size: .83rem; }
+        .floating-btn { position: fixed; right: 22px; bottom: 22px; width: 52px; height: 52px; border-radius: 50%; background: var(--accent); color: #132c43; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 25px rgba(0,0,0,.2); z-index: 90; text-decoration: none; }
+        @media (max-width: 960px) {
+            .nav-list { gap: 15px; }
+            .navbar-brand { max-width: 270px; font-size: .96rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .two-columns, .highlight .two-columns { grid-template-columns: 1fr; gap: 32px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1.5fr 1fr; }
+            .footer-grid > :first-child { grid-column: 1 / -1; }
+        }
+        @media (max-width: 720px) {
+            html { scroll-padding-top: 100px; }
+            .container { width: calc(100% - 32px); }
+            .navbar-inner { flex-wrap: wrap; gap: 0; min-height: 82px; }
+            .navbar-brand { padding-block: 15px; max-width: calc(100% - 64px); }
+            .navbar-brand span { font-size: .65rem; }
+            .menu-toggle { display: flex; }
+            .nav-list { width: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: 5px 0 16px; }
+            .js .nav-list:not(.is-open) { display: none; }
+            .nav-link { display: block; padding: 10px 0; }
+            .hero { min-height: auto; }
+            .hero-content { padding-block: 65px 75px; }
+            .hero p { font-size: 1rem; }
+            .hero-badge { font-size: .77rem; }
+            .stats { margin-top: 24px; }
+            .stats-grid { gap: 14px; }
+            .stat-card { padding: 22px 12px; }
+            .stat-card h3 { font-size: 1.06rem; }
+            .stat-card p { font-size: .8rem; }
+            .section { padding: 65px 0; }
+            .section-heading { margin-bottom: 30px; }
+            .about-box, .highlight, .contact-box, .location-panel { padding: 28px; }
+            .row-data { grid-template-columns: 1fr; gap: 5px; padding: 18px 22px; }
+            .footer-grid { gap: 28px; }
+            .floating-btn { right: 16px; bottom: 16px; }
+        }
+        @media (max-width: 380px) {
+            .stats-grid, .footer-grid { grid-template-columns: 1fr; }
+            .btn { width: 100%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+    <!-- Ícones locais: o arquivo não depende de fontes, imagens ou bibliotecas externas. -->
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <symbol id="icon-store" viewBox="0 0 24 24"><path d="M3 10h18l-2-6H5l-2 6Z M4 10v10h16V10 M9 20v-6h6v6 M3 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/></symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4 M17 3v4 M3 10h18 M8 15l3 3 5-5"/></symbol>
+        <symbol id="icon-glass" viewBox="0 0 24 24"><path d="M6 3h12l-1.5 8a4.5 4.5 0 0 1-9 0L6 3Z M12 15v6 M8 21h8 M7 8h10"/></symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+        <symbol id="icon-document" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8l-5-5Z M14 3v5h5 M8 12h8 M8 16h8"/></symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16 M4 12h16 M4 18h16"/></symbol>
+    </svg>
+
+    <header class="navbar">
+        <nav class="container navbar-inner" aria-label="Navegação principal">
+            <a class="navbar-brand" href="#inicio">
+                Abdias Ribeiro do Nascimento
+                <span>Comércio varejista de bebidas</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu de navegação" hidden>
+                <svg class="icon" aria-hidden="true"><use href="#icon-menu"/></svg>
+            </button>
+            <ul class="nav-list" id="menu">
+                <li><a class="nav-link" href="#inicio">Início</a></li>
+                <li><a class="nav-link" href="#empresa">Empresa</a></li>
+                <li><a class="nav-link" href="#atividade">Atividade</a></li>
+                <li><a class="nav-link" href="#dados">Dados</a></li>
+                <li><a class="nav-link" href="#contato">Localização</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <span class="hero-badge">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-store"/></svg>
+                    Comércio varejista de bebidas
+                </span>
+                <h1 id="hero-title">Comércio de bebidas<br><span>no Rio de Janeiro.</span></h1>
+                <p class="hero-company">54.010.543 Abdias Ribeiro do Nascimento</p>
+                <p>Fundada em 21 de fevereiro de 2024, na cidade do Rio de Janeiro, a empresa tem como atividade principal o comércio varejista de bebidas.</p>
+                <div class="button-row">
+                    <a class="btn btn-main" href="#atividade">Conheça nossa atividade</a>
+                    <a class="btn btn-outline" href="#dados">Ver dados da empresa</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats" aria-label="Informações da empresa em destaque">
+            <div class="container stats-grid">
+                <article class="stat-card">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg>
+                    <h3>21/02/2024</h3><p>Data de fundação</p>
+                </article>
+                <article class="stat-card">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-glass"/></svg>
+                    <h3>Bebidas</h3><p>Comércio varejista</p>
+                </article>
+                <article class="stat-card">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-document"/></svg>
+                    <h3>47.23-7-00</h3><p>CNAE principal</p>
+                </article>
+                <article class="stat-card">
+                    <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+                    <h3>Rio de Janeiro</h3><p>Rio de Janeiro — RJ</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="empresa" aria-labelledby="empresa-title">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title" id="empresa-title">Sobre a empresa</h2>
+                    <p class="section-subtitle">Conheça a 54.010.543 Abdias Ribeiro do Nascimento e suas principais informações cadastrais.</p>
+                </div>
+                <div class="two-columns">
+                    <div class="about-box">
+                        <div class="about-icon"><svg class="icon" aria-hidden="true"><use href="#icon-store"/></svg></div>
+                        <h3>54.010.543 Abdias Ribeiro do Nascimento</h3>
+                        <p>A empresa de CNPJ <strong>54.010.543/0001-19</strong> foi fundada em <strong>21/02/2024</strong>, na cidade do <strong>Rio de Janeiro</strong>, no estado do <strong>Rio de Janeiro</strong>.</p>
+                        <p>Sua atividade principal, conforme os dados da Receita Federal informados, é <strong>47.23-7-00 — Comércio varejista de bebidas</strong>.</p>
+                    </div>
+                    <div>
+                        <div class="feature">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>
+                            <div><h3>Fundação em 2024</h3><p>Empresa constituída em 21 de fevereiro de 2024.</p></div>
+                        </div>
+                        <div class="feature">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>
+                            <div><h3>Atividade principal</h3><p>Comércio varejista de bebidas, identificado pelo CNAE 47.23-7-00.</p></div>
+                        </div>
+                        <div class="feature">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg>
+                            <div><h3>Localização</h3><p>Município do Rio de Janeiro, no estado do Rio de Janeiro.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light" id="atividade" aria-labelledby="atividade-title">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title" id="atividade-title">Comércio varejista de bebidas</h2>
+                    <p class="section-subtitle">A atividade principal da empresa é identificada pelo código CNAE 47.23-7-00.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-glass"/></svg></div>
+                        <h3>Segmento de bebidas</h3>
+                        <p>O comércio de bebidas é o segmento indicado na atividade econômica principal da empresa.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-store"/></svg></div>
+                        <h3>Comércio varejista</h3>
+                        <p>A classificação da atividade corresponde ao varejo de bebidas, voltado à venda ao consumidor final.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-document"/></svg></div>
+                        <h3>CNAE 47.23-7-00</h3>
+                        <p>Descrição da atividade principal: Comércio varejista de bebidas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="destaque-title">
+            <div class="container">
+                <div class="highlight">
+                    <div class="two-columns">
+                        <div>
+                            <span class="eyebrow">Abdias Ribeiro do Nascimento</span>
+                            <h2 id="destaque-title">Uma empresa do varejo de bebidas no Rio de Janeiro.</h2>
+                            <p>Fundada em 2024, a 54.010.543 Abdias Ribeiro do Nascimento tem suas informações de identificação, fundação e atividade reunidas nesta página.</p>
+                            <a class="btn btn-main" href="#dados">Consultar informações</a>
+                        </div>
+                        <div>
+                            <div class="feature">
+                                <svg class="icon" aria-hidden="true"><use href="#icon-glass"/></svg>
+                                <div><h3>Atividade</h3><p>Comércio varejista de bebidas.</p></div>
+                            </div>
+                            <div class="feature">
+                                <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+                                <div><h3>Município</h3><p>Rio de Janeiro — RJ.</p></div>
+                            </div>
+                            <div class="feature">
+                                <svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg>
+                                <div><h3>Fundação</h3><p>21 de fevereiro de 2024.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light" id="dados" aria-labelledby="dados-title">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title" id="dados-title">Dados da empresa</h2>
+                    <p class="section-subtitle">Informações cadastrais da 54.010.543 Abdias Ribeiro do Nascimento.</p>
+                </div>
+                <dl class="data-table">
+                    <div class="row-data"><dt class="data-label">CNPJ</dt><dd class="data-value">54.010.543/0001-19</dd></div>
+                    <div class="row-data"><dt class="data-label">Razão social</dt><dd class="data-value">54.010.543 Abdias Ribeiro do Nascimento</dd></div>
+                    <div class="row-data"><dt class="data-label">Data de abertura</dt><dd class="data-value"><time datetime="2024-02-21">21/02/2024</time></dd></div>
+                    <div class="row-data"><dt class="data-label">Município</dt><dd class="data-value">Rio de Janeiro</dd></div>
+                    <div class="row-data"><dt class="data-label">Estado</dt><dd class="data-value">Rio de Janeiro — RJ</dd></div>
+                    <div class="row-data"><dt class="data-label">CNAE principal</dt><dd class="data-value">47.23-7-00</dd></div>
+                    <div class="row-data"><dt class="data-label">Atividade principal</dt><dd class="data-value">Comércio varejista de bebidas</dd></div>
+                </dl>
+                <p class="data-note">Informações apresentadas com base nos dados fornecidos para esta página. A descrição da atividade principal foi informada como correspondente ao cadastro da Receita Federal.</p>
+            </div>
+        </section>
+
+        <section class="section" id="contato" aria-labelledby="localizacao-title">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title" id="localizacao-title">Localização</h2>
+                    <p class="section-subtitle">A empresa foi fundada na cidade do Rio de Janeiro, no estado do Rio de Janeiro.</p>
+                </div>
+                <div class="two-columns">
+                    <div class="contact-box">
+                        <div class="contact-item">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-store"/></svg>
+                            <div><h3>Empresa</h3><p>54.010.543 Abdias Ribeiro do Nascimento</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+                            <div><h3>Cidade e estado</h3><p>Rio de Janeiro — RJ</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-glass"/></svg>
+                            <div><h3>Segmento</h3><p>Comércio varejista de bebidas</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-calendar"/></svg>
+                            <div><h3>Data de fundação</h3><p>21 de fevereiro de 2024</p></div>
+                        </div>
+                    </div>
+                    <div class="location-panel">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+                        <h3>Rio de Janeiro</h3>
+                        <p>Estado do Rio de Janeiro · Brasil</p>
+                        <p class="notice">Endereço completo, telefone, e-mail e horário de atendimento não foram informados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title">Conheça os dados da nossa empresa.</h2>
+                <p>54.010.543 Abdias Ribeiro do Nascimento · Comércio varejista de bebidas.</p>
+                <a class="btn btn-main" href="#dados">Ver dados cadastrais</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h2>54.010.543 Abdias Ribeiro do Nascimento</h2>
+                    <p>Empresa fundada em 21/02/2024, no Rio de Janeiro — RJ, com atividade principal de comércio varejista de bebidas.</p>
+                </div>
+                <div>
+                    <h2>Navegação</h2>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#empresa">Empresa</a></li>
+                        <li><a href="#atividade">Atividade</a></li>
+                        <li><a href="#dados">Dados da empresa</a></li>
+                        <li><a href="#contato">Localização</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Informações</h2>
+                    <p class="footer-label">CNPJ</p><strong>54.010.543/0001-19</strong>
+                    <p class="footer-label">Localização</p><strong>Rio de Janeiro — RJ</strong>
+                    <p class="footer-label">CNAE principal</p><strong>47.23-7-00</strong>
+                </div>
+            </div>
+            <div class="footer-line">© <span id="ano">2026</span> 54.010.543 Abdias Ribeiro do Nascimento. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <a class="floating-btn" href="#contato" aria-label="Ver informações de localização" title="Localização">
+        <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+    </a>
+
+    <script>
+        document.documentElement.classList.add('js');
+        document.getElementById('ano').textContent = new Date().getFullYear();
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.hidden = false;
+
+        function setMenuOpen(open) {
+            menu.classList.toggle('is-open', open);
+            menuToggle.setAttribute('aria-expanded', String(open));
+            menuToggle.setAttribute('aria-label', open ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+        }
+
+        menuToggle.addEventListener('click', function () {
+            setMenuOpen(menuToggle.getAttribute('aria-expanded') !== 'true');
+        });
+
+        menu.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () { setMenuOpen(false); });
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+                setMenuOpen(false);
+                menuToggle.focus();
+            }
+        });
+
+        window.matchMedia('(min-width: 721px)').addEventListener('change', function (event) {
+            if (event.matches) setMenuOpen(false);
+        });
+    </script>
+</body>
+</html>
